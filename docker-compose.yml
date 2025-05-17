@@ -23,8 +23,9 @@ services:
 
 
   expensesapp:
-    build:
-      context: .
+    image: xdfx01/expenses-tracker-webapp
+   #build:
+     #context: .
     container_name: expensesapp
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/expenses_tracker
